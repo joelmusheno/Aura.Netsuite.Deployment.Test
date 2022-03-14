@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_nccer_teststaging_status">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Test Staging Status</name>
+  <customvalues>
+    <customvalue scriptid="val_52556_1046823_sb1_862">
+      <isinactive>F</isinactive>
+      <value>Import</value>
+    </customvalue>
+    <customvalue scriptid="val_52557_1046823_sb1_253">
+      <isinactive>F</isinactive>
+      <value>Match</value>
+    </customvalue>
+    <customvalue scriptid="val_52558_1046823_sb1_366">
+      <isinactive>F</isinactive>
+      <value>Post</value>
+    </customvalue>
+  </customvalues>
+</customlist>

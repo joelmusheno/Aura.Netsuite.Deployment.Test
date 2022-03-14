@@ -1,0 +1,22 @@
+<restlet scriptid="customscript_aura_subscriptionadtlpurchu">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Subscription Adtl Purchase U Operation</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/_aura_subscriptionadditionalpurchaseU.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_aura_subscriptionadtlpurchu">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <status>RELEASED</status>
+      <title>Subscription Adtl Purchase U Operation</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>

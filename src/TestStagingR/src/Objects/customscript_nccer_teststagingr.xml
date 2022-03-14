@@ -1,0 +1,22 @@
+<restlet scriptid="customscript_nccer_teststagingr">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Test Staging R Operation</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/_nccer_teststagingR.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_nccer_teststagingr">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <status>RELEASED</status>
+      <title>Test Staging R Operation</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>

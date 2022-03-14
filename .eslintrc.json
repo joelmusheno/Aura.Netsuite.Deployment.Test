@@ -1,0 +1,50 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "rules": {
+      "editorconfig/charset": "error",
+      "editorconfig/eol-last": "error",
+      "editorconfig/indent": "error",
+      "editorconfig/linebreak-style": "error",
+      "editorconfig/no-trailing-spaces": "error",
+      "filenames/match-regex": [2, "^_aura_*", true],
+      "semi": "error",
+      "quotes": ["error", "single"],
+      "no-extra-parens": ["error", "all"],
+      "lines-between-class-members": "error",
+      "newline-per-chained-call": [
+        "error",
+        { "ignoreChainWithDepth": 2 }
+      ],
+      "padding-line-between-statements": [
+        "error",
+          { "blankLine": "always", "prev": "directive", "next": "*" },
+          { "blankLine": "any", "prev": "directive", "next": "directive" },
+          { "blankLine": "always", "prev": ["case", "default"], "next": "*" },
+          { "blankLine": "always", "prev": "block-like", "next": "*" }
+      ],
+      "lines-around-comment": [
+        "error",
+        { "afterBlockComment": true }
+      ],
+      "comma-spacing": "error"
+    },
+    "plugins": [
+      "editorconfig",
+      "filenames"
+    ],
+    "globals": {
+      "define": false,
+      "log": false,
+      "context": false,
+      "nlapiGetContext": false,
+      "nlapiSubmitField": false
+    }
+}

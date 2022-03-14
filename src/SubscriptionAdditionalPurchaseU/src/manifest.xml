@@ -1,0 +1,19 @@
+<manifest projecttype="ACCOUNTCUSTOMIZATION">
+  <projectname>SubscriptionAdditionalPurchaseU</projectname>
+  <frameworkversion>1.0</frameworkversion>
+  <dependencies>
+    <features>
+      <feature required="true">CRM</feature>
+      <feature required="true">SERVERSIDESCRIPTING</feature>
+      <feature required="false">MULTILANGUAGE</feature>
+      <feature required="false">CUSTOMSEGMENTS</feature>
+      <feature required="false">EXTREMELIST</feature>
+      <feature required="false">MAILMERGE</feature>
+      <feature required="true">CUSTOMRECORDS</feature>
+    </features>
+    <objects>
+      <object>customrole_aura_integrationrole</object>
+      <object>customlist_solupaysuite_gatewaylist</object>
+    </objects>
+  </dependencies>
+</manifest>

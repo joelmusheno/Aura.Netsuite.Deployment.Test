@@ -1,0 +1,5 @@
+src/registerServiceWorker.js
+src/serviceWorker.ts
+src/**/__tests__/**
+src/**/*test.ts
+node_modules/*

@@ -1,0 +1,46 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+
+- task: Bash@3
+  displayName: 'Install Suitecloud CLI'
+  inputs:
+    targetType: 'inline'
+    script: 'npm install -g --supressSuiteCloudSDKLicensePrompt @oracle/suitecloud-cli'
+
+- task: DownloadSecureFile@1
+  name: netsuiteAuthTokensJson
+  displayName: 'Download dev netsuite tokens'
+  inputs:
+    secureFile: 'netsuite_tokens_dev.json'
+
+- task: Bash@3
+  displayName: 'Set up Auth via Tokens for Netsuite Packages'
+  inputs:
+    targetType: 'inline'
+    script: 'sh AccountSetup.sh $(netsuiteAuthTokensJson.secureFilePath)'
+    workingDirectory: '$(Build.Repository.LocalPath)/src'
+
+- task: Bash@3
+  displayName: 'Validate Netsuite Packages SuiteCloud CLI'
+  inputs:
+    targetType: 'inline'
+    script: 'sh Validate.sh $(netsuiteAuthTokensJson.secureFilePath)'
+    workingDirectory: '$(Build.Repository.LocalPath)/src'
+
+#  Commented out as we are using this repo as a test platform
+# - task: Bash@3
+#   displayName: 'Deploy Account Management Package'
+#   inputs:
+#     targetType: 'inline'
+#     script: '$(npm bin)/suitecloud project:deploy'
+#     workingDirectory: '$(Build.Repository.LocalPath)/src/CustomersearchbyNameCardR'

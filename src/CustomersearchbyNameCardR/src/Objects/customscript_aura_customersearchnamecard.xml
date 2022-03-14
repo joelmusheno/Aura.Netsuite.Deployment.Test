@@ -1,0 +1,22 @@
+<restlet scriptid="customscript_aura_customersearchnamecard">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Customer R By Name or Card</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/_aura_customersearchbyNameCardR.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_aura_customersearchnamecard">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <status>RELEASED</status>
+      <title>Customer R By Name or Card</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>

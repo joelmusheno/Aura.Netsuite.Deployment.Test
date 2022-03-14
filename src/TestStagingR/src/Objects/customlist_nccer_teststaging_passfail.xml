@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_nccer_teststaging_passfail">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Pass/Fail</name>
+  <customvalues>
+    <customvalue scriptid="val_52676_1046823_sb1_724">
+      <isinactive>F</isinactive>
+      <value>Pass</value>
+    </customvalue>
+    <customvalue scriptid="val_52677_1046823_sb1_988">
+      <isinactive>F</isinactive>
+      <value>TR</value>
+    </customvalue>
+  </customvalues>
+</customlist>
