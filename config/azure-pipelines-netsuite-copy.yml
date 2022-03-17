@@ -11,11 +11,13 @@ pool:
 
 steps:
 
-- task: Bash@3
-  displayName: 'Install Suitecloud CLI'
+- task: NodeTool@0
+  displayName: 'Install NodeJS'
   inputs:
-    targetType: 'inline'
-    script: 'npm install -g --supressSuiteCloudSDKLicensePrompt @oracle/suitecloud-cli'
+    versionSpec: '12.x'
+
+- bash: npm install -g --supressSuiteCloudSDKLicensePrompt @oracle/suitecloud-cli
+  displayName: 'Install Suitecloud CLI'
 
 - task: DownloadSecureFile@1
   name: netsuiteAuthTokensJson
